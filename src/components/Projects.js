@@ -5,6 +5,20 @@ import Card from "./Card";
 const Projects = () => {
   const data = [
     {
+      name: "Portfolio (old)",
+      desc: "It is a simple minimalistic portfolio website made by me to showcase some of my best works and for people to find me on the internet. The portfolio contains every detail one might need in order to get in touch officially.",
+      tags: ["Js", "git", "Tailwind", "React"],
+      link: "https://animesh-kumar.netlify.app/",
+      gitl: "https://github.com/AnimeshDev1999/My-portfolio",
+    },
+    {
+      name: "Earthly",
+      desc: "The website was made as a project for a Ireland based company named 'Earthly' which is a eco-friendly products company",
+      tags: ["Js", "git", "Tailwind", "React"],
+      link: "https://earthly-ireland.netlify.app/",
+      gitl: "https://github.com/AnimeshDev1999/Earthly",
+    },
+    {
       name: "Food Place",
       desc: "Food Place is one of my self projects. It is a website design for an imaginary food subscription service startup that is intended to make people eat well and healthy in todays busy world without having to worry about cooking daily.",
       tags: ["Js", "Html", "Css", "Git", "Ps"],

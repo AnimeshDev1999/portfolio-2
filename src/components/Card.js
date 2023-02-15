@@ -21,12 +21,22 @@ const Card = (props) => {
         ))}
       </div>
       <div className="flex gap-2 justify-end">
-        <a target="_blank" rel="noreferrer" href={props.info.link}>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          target="_blank"
+          rel="noreferrer"
+          href={props.info.link}
+        >
           <img className="h-8 w-8 bg-ascent rounded-md" src={opn} alt="" />
-        </a>
-        <a target="_blank" rel="noreferrer" href={props.info.gitl}>
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          target="_blank"
+          rel="noreferrer"
+          href={props.info.gitl}
+        >
           <img className="h-8 w-8 bg-ascent rounded-md" src={git} alt="" />
-        </a>
+        </motion.a>
       </div>
     </motion.div>
   );

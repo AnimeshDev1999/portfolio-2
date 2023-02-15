@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = (props) => {
   let myDate = new Date();
   let hrs = myDate.getHours();
 
@@ -23,7 +23,7 @@ const Hero = () => {
           <span className="bg-gradient-to-r animate-gradient-xy text-gradient from-sky-500 via-green-500 to-violet-800">
             web developer
           </span>
-          .
+          {""}.
         </h1>
         <p className="text-xl text-ascent mb-8">
           To be specific I am a front-end web developer who likes to code
@@ -35,10 +35,10 @@ const Hero = () => {
             scale: 1.1,
             background: "#eeeeee",
             color: "#10101a",
-            fontWeight: "bold",
           }}
           whileTap={{ scale: 0.9 }}
-          className="border-2 px-8 py-4 bg-base text-primary rounded-md text-2xl"
+          onClick={props.info}
+          className="border-2 px-8 py-4 bg-base text-primary rounded-md text-2xl cursor-none"
         >
           Work with me
         </motion.button>

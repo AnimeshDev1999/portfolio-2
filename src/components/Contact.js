@@ -19,43 +19,47 @@ const Contact = () => {
           discuss your work or just drop a text with your contact info and I
           will reach out to you.
         </p>
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-            background: "#eeeeee",
-            color: "#10101a",
-            fontWeight: "bold",
-          }}
-          whileTap={{ scale: 0.9 }}
-          className="border-2 px-8 py-4 mb-8 bg-base text-primary rounded-md text-2xl"
-        >
-          Send an E-mail
-        </motion.button>
+        <a href="mailto:animesh99dev@gmail.com">
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+              background: "#eeeeee",
+              color: "#10101a",
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="border-2 cursor-none px-8 py-4 mb-8 bg-base text-primary rounded-md text-2xl"
+          >
+            Send an E-mail
+          </motion.button>
+        </a>
         <div className="flex gap-4 justify-end mb-6">
-          <a
+          <motion.a
+            whileHover={{ scale: 1.2 }}
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/_web_canavas_/?igshid=ZDdkNTZiNTM%3D"
           >
             <img className="socials" src={insta} alt="" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/animesh-kumar-b44685217/"
           >
             <img className="socials" src={linked} alt="" />
-          </a>
-          <a href="tel:92609-98607">
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="tel:92609-98607">
             <img className="socials" src={what} alt="" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
             target="_blank"
             rel="noreferrer"
             href="https://github.com/AnimeshDev1999"
           >
             <img className="socials" src={git} alt="" />
-          </a>
+          </motion.a>
         </div>
         <p className="text-2xl text-ascent text-right mb-10">
           animesh99dev@gmail.com

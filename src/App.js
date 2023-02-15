@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Logo from "./components/Logo";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [isActive, setIsActive] = useState("Home");
+  const activeHandler = (event) => {
+    setIsActive(event.target.innerText);
+    console.log(isActive);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Logo></Logo>
+      <Navbar info={activeHandler}></Navbar>
+      {/* <Hero></Hero> */}
+      {/* <About></About> */}
+      {/* <Projects></Projects> */}
+      {/* <Contact></Contact> */}
+      {isActive === "Home" ? (
+        <Hero></Hero>
+      ) : isActive === "About" ? (
+        <About></About>
+      ) : isActive === "Work" ? (
+        <Projects></Projects>
+      ) : (
+        <Contact></Contact>
+      )}
+    </React.Fragment>
   );
 }
 

@@ -19,12 +19,6 @@
     @apply bg-base text-primary relative overflow-hidden;
     font-family: "Georama", sans-serif;
   }
-  .tech {
-    @apply bg-ascent rounded-md px-4 py-2 text-base text-xl flex justify-center items-center gap-1;
-  }
-  .tag {
-    @apply bg-primary text-base px-3 rounded-md uppercase;
-  }
   .socials {
     @apply h-10 w-10 bg-ascent p-2 rounded-md;
   }
@@ -68,5 +62,24 @@
     width: 7px;
     height: 7px;
     background: #5a95cc;
+  }
+  .nav-text {
+    pointer-events: none;
+    opacity: 0.02;
+    position: absolute;
+    right: -4rem;
+    bottom: -8rem;
+    font-size: 20rem;
+    font-weight: bolder;
+    z-index: -100;
+  }
+  .decor {
+    position: absolute;
+    top: 10rem;
+    opacity: 0.5;
+    left: 20rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    z-index: -100;
   }
 }

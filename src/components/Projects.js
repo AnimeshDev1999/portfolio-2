@@ -26,6 +26,20 @@ const Projects = () => {
       gitl: "https://github.com/AnimeshDev1999/Food-place",
     },
     {
+      name: "Minimalist Bank",
+      desc: "The Minimalist Bank (M-Bank) is a powerful javascript based web application and a solo project built down from scratch to showcase the power of javascript's data structures and the DOM manipulation.",
+      tags: ["Js", "Html", "Css", "Git", "jQuerry"],
+      link: "https://animeshdev1999.github.io/Minimalist-bank/",
+      gitl: "https://github.com/AnimeshDev1999/Minimalist-bank",
+    },
+    {
+      name: "Expense Tracker",
+      desc: "An expense tracking web app made with javascript data structures which shows detailed statistics of your entered data based on the maximum expense made per month also includes structures like bar graph.",
+      tags: ["Html", "Css", "React", "Git", "Jquerry"],
+      link: "https://expenses-tracker-m1.netlify.app/",
+      gitl: "https://github.com/AnimeshDev1999/expense-tracker",
+    },
+    {
       name: "Shuttle",
       desc: "Shuttle is a project of mine that included a group of 3 people working on it we synced our work in order to get this project together the project is the update to previously existing website named shuttle and was created again from scratch.",
       tags: ["Js", "Html", "Css", "Git", "Collab"],
@@ -52,9 +66,13 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
-      <motion.div animate={anim} initial={init} className="w-3/5">
-        <h1 className="text-6xl font-bold text-ascent mb-8 bg-gradient-to-br animate-gradient-xy text-gradient from-sky-500 via-green-500 to-violet-800">
+    <div className="h-screen w-screen flex items-center justify-center overflow-hidden">
+      <motion.div
+        animate={anim}
+        initial={init}
+        className="sm:w-4/5 md:w-3/5 lg:w-3/5 relative"
+      >
+        <h1 className="sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ascent sm:mb-4 md:mb-6 lg:mb-8 bg-gradient-to-br animate-gradient-xy text-gradient from-sky-500 via-green-500 to-violet-800">
           Projects.
         </h1>
         <motion.div
@@ -68,6 +86,10 @@ const Projects = () => {
             <Card info={entry} key={entry.name}></Card>
           ))}
         </motion.div>
+        <div className="flex gap-3 absolute top-0 right-0 text-primary text-xl pointer-events-none bg-glassalttwo backdrop-blur-sm shadow-sm shadow-glassalt border-1 border-glassalttwo rounded-xl px-4 py-2">
+          <span className="animate-arr">&#9664;</span>
+          <span>Swipe</span>
+        </div>
       </motion.div>
     </div>
   );

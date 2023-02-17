@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Indicator from "./components/Indicator";
 import Cursor from "./components/Cursor";
+import NavText from "./components/NavText";
+import NavbarMob from "./components/NavbarMob";
 
 function App() {
   const [isActive, setIsActive] = useState("Home");
@@ -21,6 +23,7 @@ function App() {
     <React.Fragment>
       <Logo></Logo>
       <Navbar info={[activeHandler, isActive]}></Navbar>
+      <NavText info={isActive}></NavText>
       {/* <Hero></Hero> */}
       {/* <About></About> */}
       {/* <Projects></Projects> */}
@@ -35,6 +38,7 @@ function App() {
         <Contact></Contact>
       )}
       <Indicator info={isActive}></Indicator>
+      <NavbarMob info={[activeHandler, isActive]}></NavbarMob>
       <Cursor></Cursor>
     </React.Fragment>
   );

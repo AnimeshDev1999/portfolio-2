@@ -11,10 +11,10 @@ const Contact = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
       <motion.div animate={anim} initial={init} className="w-3/5">
-        <h1 className="text-6xl font-bold text-ascent mb-8 bg-gradient-to-br animate-gradient-xy text-gradient from-sky-500 via-green-500 to-violet-800">
+        <h1 className="sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ascent sm:mb-4 md:mb-6 lg:mb-8 bg-gradient-to-br animate-gradient-xy text-gradient from-sky-500 via-green-500 to-violet-800">
           Get in touch.
         </h1>
-        <p className="text-xl text-ascent mb-8 leading-relaxed">
+        <p className="sm:text-medium md:text-xl lg:text-xl text-ascent mb-8 leading-relaxed">
           I am actively looking for work so let's have a cup of coffee and
           discuss your work or just drop a text with your contact info and I
           will reach out to you.
@@ -32,12 +32,12 @@ const Contact = () => {
               color: "#10101a",
             }}
             whileTap={{ scale: 0.9 }}
-            className="border-2 cursor-none px-8 py-4 mb-8 rounded-md text-2xl"
+            className="border-2 px-8 py-4 rounded-md md:text-xl lg:text-2xl cursor-none sm:mb-20 md:mb-8 lg:mb-8"
           >
             Send an E-mail
           </motion.button>
         </a>
-        <div className="flex gap-4 justify-end mb-6">
+        <div className="flex gap-4 sm:justify-center md:justify-end lg:justify-end mb-6">
           <motion.a
             whileHover={{ scale: 1.2 }}
             target="_blank"
@@ -66,7 +66,7 @@ const Contact = () => {
             <img className="socials" src={git} alt="" />
           </motion.a>
         </div>
-        <p className="text-2xl text-ascent text-right mb-10">
+        <p className="sm:text-xl md:text-2xl lg:text-2xl text-ascent sm:text-center md:text-right lg:text-right mb-10">
           animesh99dev@gmail.com
         </p>
       </motion.div>

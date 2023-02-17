@@ -67,11 +67,18 @@
     pointer-events: none;
     opacity: 0.02;
     position: absolute;
-    right: -4rem;
-    bottom: -8rem;
     font-size: 20rem;
     font-weight: bolder;
     z-index: -100;
+  }
+  .nav-text-mob {
+    pointer-events: none;
+    opacity: 0.02;
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bolder;
+    z-index: -100;
+    transform: rotate(45deg);
   }
   .decor {
     position: absolute;

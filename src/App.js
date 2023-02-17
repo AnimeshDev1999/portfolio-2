@@ -9,6 +9,7 @@ import Indicator from "./components/Indicator";
 import Cursor from "./components/Cursor";
 import NavText from "./components/NavText";
 import NavbarMob from "./components/NavbarMob";
+import NavTextMob from "./components/NavTextMob";
 
 function App() {
   const [isActive, setIsActive] = useState("Home");
@@ -24,6 +25,7 @@ function App() {
       <Logo></Logo>
       <Navbar info={[activeHandler, isActive]}></Navbar>
       <NavText info={isActive}></NavText>
+      <NavTextMob info={isActive}></NavTextMob>
       {/* <Hero></Hero> */}
       {/* <About></About> */}
       {/* <Projects></Projects> */}

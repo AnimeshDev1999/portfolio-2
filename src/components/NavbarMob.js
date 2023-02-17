@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const NavbarMob = (props) => {
   return (
-    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 sm:block md:hidden lg:hidden">
+    <div className="absolute bottom-20 left-1/2 -translate-x-1/2 sm:block md:hidden lg:hidden">
       <motion.ul className="bg-glassalttwo backdrop-blur-sm px-6 shadow-sm shadow-glassalt border-1 border-glassalttwo rounded-xl py-4 nav-box flex gap-6">
         <motion.li
           onClick={props.info[0]}

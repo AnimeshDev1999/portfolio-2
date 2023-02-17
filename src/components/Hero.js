@@ -31,6 +31,11 @@ const Hero = (props) => {
           make, and I continue to learn. Always.
         </p>
         <motion.button
+          initial={{
+            scale: 1,
+            background: "#10101a",
+            color: "#eeeeee",
+          }}
           whileHover={{
             scale: 1.1,
             background: "#eeeeee",
@@ -38,7 +43,7 @@ const Hero = (props) => {
           }}
           whileTap={{ scale: 0.9 }}
           onClick={props.info}
-          className="border-2 px-8 py-4 bg-base text-primary rounded-md text-2xl cursor-none"
+          className="border-2 px-8 py-4 rounded-md text-2xl cursor-none"
         >
           Work with me
         </motion.button>

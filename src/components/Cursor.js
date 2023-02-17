@@ -14,8 +14,8 @@ const Cursor = () => {
   }, []);
   const variants = {
     default: {
-      x: mousePos.x - 16,
-      y: mousePos.y - 16,
+      x: mousePos.x - 12,
+      y: mousePos.y - 12,
     },
   };
 
@@ -24,7 +24,7 @@ const Cursor = () => {
       variants={variants}
       animate={"default"}
       transition={{ duration: 0 }}
-      className="h-8 w-8 bg-ascent pointer-events-none rounded-full fixed top-0 left-0"
+      className="h-4 w-4 bg-ascent pointer-events-none rounded-full fixed top-0 left-0"
     ></motion.div>
   );
 };

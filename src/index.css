@@ -42,10 +42,10 @@
     opacity: 1 !important;
   }
   .nav-dock {
-    @apply h-6 w-2 bg-ascent rounded-md transition-all duration-1000;
+    @apply h-4 w-1 bg-ascent rounded-md transition-all duration-1000;
   }
   .dock-active {
-    @apply w-6 rotate-45;
+    @apply w-4;
   }
   .cursorZ {
     position: fixed;

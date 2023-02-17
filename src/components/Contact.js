@@ -21,13 +21,18 @@ const Contact = () => {
         </p>
         <a href="mailto:animesh99dev@gmail.com">
           <motion.button
+            initial={{
+              scale: 1,
+              background: "#10101a",
+              color: "#eeeeee",
+            }}
             whileHover={{
               scale: 1.1,
               background: "#eeeeee",
               color: "#10101a",
             }}
             whileTap={{ scale: 0.9 }}
-            className="border-2 cursor-none px-8 py-4 mb-8 bg-base text-primary rounded-md text-2xl"
+            className="border-2 cursor-none px-8 py-4 mb-8 rounded-md text-2xl"
           >
             Send an E-mail
           </motion.button>

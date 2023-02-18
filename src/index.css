@@ -12,6 +12,9 @@
 }
 
 @layer base {
+  html {
+    overflow: hidden;
+  }
   * {
     cursor: none;
   }

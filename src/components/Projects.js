@@ -5,6 +5,13 @@ import Card from "./Card";
 const Projects = () => {
   const data = [
     {
+      name: "Bimaper",
+      desc: "A website frontend made for Bimaper, a sub brand of Wilman Infra Group. And is a solo project of mine.",
+      tags: ["Js", "UI&UX", "Tailwind", "React"],
+      link: "https://bimaperv3.netlify.app/",
+      gitl: "https://github.com/AnimeshDev1999/Bimaper-v3",
+    },
+    {
       name: "Portfolio (old)",
       desc: "It is a simple minimalistic portfolio website made by me to showcase some of my best works and for people to find me on the internet. The portfolio contains every detail one might need in order to get in touch officially.",
       tags: ["Js", "git", "Tailwind", "React"],
